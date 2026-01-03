@@ -1,17 +1,17 @@
 import dotenv from "dotenv"
 dotenv.config()
 
+
 import app from "./app.js";
 import connectDB from "./config/db.js";
-
-const PORT = process.env.port || 4001
+import config from "./config/index.js";
 
 
 const startServer = async() => {
     try{
         await connectDB();
-        app.listen(PORT, () => {
-            console.log(`Auth Server Runnning At Port: ${PORT}`);
+        app.listen(config.app.port, () => {
+            console.log(`Auth Server Runnning At Port: ${config.app.port}`);
         })
     }catch(error){
          console.error("Failed to start Auth Service", error);

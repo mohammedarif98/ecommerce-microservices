@@ -11,6 +11,9 @@ const config = {
         // uri: process.env.MONGO_URI || 'mongodb://localhost:27017/ecommerce-microservice/auth-service',
         name: process.env.DB_NAME,
     },
+    jwt: {
+        token: process.env.JWT_SECRET
+    },
     cors: {
         origin: "*",
         methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],

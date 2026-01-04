@@ -2,9 +2,9 @@ import dotenv from "dotenv"
 dotenv.config()
 
 
-import app from "./app.js";
-import connectDB from "./config/db.js";
-import config from "./config/index.js";
+import app from "./src/app.js";
+import connectDB from "./src/config/db.js";
+import config from "./src/config/index.js";
 
 
 const startServer = async() => {

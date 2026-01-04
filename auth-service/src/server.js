@@ -14,8 +14,8 @@ const startServer = async() => {
             console.log(`Auth Server Runnning At Port: ${config.app.port}`);
         })
     }catch(error){
-         console.error("Failed to start Auth Service", error);
-         process.exit(1)
+        console.error("Failed to start Auth Service", error);
+        process.exit(1)
     }
 } 
 

@@ -12,7 +12,8 @@ const config = {
         name: process.env.DB_NAME,
     },
     jwt: {
-        token: process.env.JWT_SECRET
+        token: process.env.JWT_SECRET,
+        expires: process.env.JWT_EXPIRES_IN
     },
     cors: {
         origin: "*",
